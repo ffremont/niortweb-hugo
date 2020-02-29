@@ -3,3 +3,8 @@
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.65.3"
+
+[build]
+  command = "yarn build"
+  functions = "lambda" #  netlify-lambda reads this
+  publish = "build"

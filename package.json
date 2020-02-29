@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"hugo server -D"
+    "start": "hugo server -D",
+
+    "build:lambda": "netlify-lambda build functions"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3"
+  }
 }
