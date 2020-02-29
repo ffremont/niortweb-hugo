@@ -5,5 +5,5 @@
   HUGO_VERSION = "0.65.3"
 
 [build]
-  command = "hugo && npm run build" 
+  command = "hugo && npm install && npm run build" 
   functions = "lambda" #  netlify-lambda reads this a
